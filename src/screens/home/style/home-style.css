@@ -1,0 +1,147 @@
+.hero_section {
+  background: #fafbfc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.hero_statistics {
+  display: flex;
+  padding: 20px 60px;
+  justify-content: center;
+  align-items: center;
+  background: #2489d3;
+}
+.hero_statistics_text {
+  color: #fff;
+  text-align: center;
+  font-family: Outfit;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.hero_statistics_text {
+  border-right: 1px solid #fafbfc;
+  padding-right: 30px;
+}
+
+.hero_statistics_text.hero_statistics_last {
+  border-right: none;
+}
+.uber_uns_section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.unsere_angebote_section {
+  background: #eff5fa;
+  display: flex;
+  padding: 80px 40px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.unsere_angebote_title {
+  color: #333;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: Outfit;
+  font-size: 55px;
+  font-weight: 700;
+  border-bottom: 4px solid #f0c932;
+}
+.footer_section {
+  margin-top: auto;
+}
+.hero_statistics_container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+}
+
+.hero_statistics_text.border_none {
+  width: 240px;
+}
+.hero_statistics_text.first {
+  width: 300px;
+}
+.hero_statistics_text.third {
+  width: 260px;
+}
+.hero_statistics_text.hero_statistics_last {
+  width: 265px;
+}
+@media (max-width: 1100px) {
+  .hero_statistics {
+    flex-wrap: wrap;
+  }
+  .hero_statistics_text {
+    width: 250px;
+  }
+  .border_none {
+    border-right: none;
+  }
+  .unsere_angebote_title {
+    font-size: 45px;
+  }
+  .hero_statistics_container {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+  }
+  .hero_statistics_text {
+    padding-right: 50px;
+  }
+  .hero_statistics_text.border_none {
+    width: 240px;
+  }
+  .hero_statistics_text.first {
+    width: 278px;
+  }
+  .hero_statistics_text.third {
+    width: 285px;
+  }
+  .hero_statistics_text.hero_statistics_last {
+    width: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero_statistics {
+    padding: 40px 20px;
+  }
+  .hero_statistics_text {
+    border-right: none;
+    border-bottom: 1px solid #fafbfc;
+    width: 100%;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+  .unsere_angebote_title {
+    font-size: 25px;
+    margin: 0 auto;
+  }
+  .unsere_angebote_section {
+    padding: 40px 20px;
+    justify-content: unset;
+    align-items: unset;
+  }
+  .hero_statistics_container {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .hero_statistics_text.hero_statistics_last {
+    border: none;
+    padding-bottom: 0px;
+  }
+  .hero_statistics_text {
+    margin: 0px;
+  }
+}

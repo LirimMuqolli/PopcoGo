@@ -1,0 +1,19 @@
+.step_container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 100%;
+}
+.step_container .checkbox_label {
+  padding: 25px 30px 25px 15px;
+  height: auto;
+}
+.formwrapper_container .step_container {
+  width: 700px;
+}
+
+@media (max-width:1100px) {
+  .formwrapper_container .step_container{
+    width: 100%;
+  }
+}

@@ -1,0 +1,152 @@
+.steps_container {
+  min-height: 100vh;
+  height: 100%;
+  background: #fafbfc;
+  overflow: hidden;
+}
+.button_previous_and_show_steps {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.button_previous {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.button_previous_text {
+  color: #8692a6;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 700;
+}
+.step {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.umfrage_container {
+  display: flex;
+  justify-content: center;
+  max-width: 680px;
+  align-items: center;
+  padding-top: 100px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.completed_message {
+  color: #333;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 30px;
+  margin-top: 0px;
+}
+.home_button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 100px;
+  background: #2489d3;
+  display: flex;
+  padding: 20px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.home_button_text {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+.home_button_container {
+  padding-top: 60px;
+  width: 100%;
+}
+.home_button:hover {
+  background: #2079ba;
+}
+.show_steps {
+  color: #8692a6;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  text-align: end;
+  font-weight: 400;
+}
+.show_description_steps {
+  color: #8692a6;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+.steps_wrapper {
+  padding: 10px 40px;
+}
+@media (max-width: 1100px) {
+  .step {
+    padding: 22px;
+    margin: auto;
+    align-items: center;
+  }
+  .show_steps {
+    text-align: end;
+  }
+  .steps_wrapper {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .button_previous_text {
+    font-size: 16px;
+  }
+  .step {
+    padding: 20px;
+  }
+  .steps_wrapper {
+    padding: 10px;
+  }
+  .button_previous svg {
+    height: 20px !important;
+  }
+  .button_previous_and_show_steps {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .show_description_steps {
+    font-size: 16px;
+    text-align: right;
+  }
+  .show_steps {
+    margin-bottom: 0px;
+  }
+  .show_description_steps {
+    margin-top: 0px;
+  }
+  .step {
+    padding: 20px 0px;
+  }
+  .completed_message {
+    font-size: 16px;
+  }
+  .home_button {
+    padding: 15px 30px;
+  }
+  .home_button_text {
+    font-size: 16px;
+  }
+}

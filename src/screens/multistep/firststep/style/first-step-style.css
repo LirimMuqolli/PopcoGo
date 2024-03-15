@@ -1,0 +1,108 @@
+.form_control {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11px;
+  align-self: stretch;
+  color: #333;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+}
+.form_control_container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  align-items: center;
+}
+.input_form_control {
+  display: flex;
+  width: 100%;
+  padding: 22px 22px;
+  align-items: center;
+  gap: 10px;
+  height: 70px;
+  border-radius: 6px;
+  border: 1px solid #8692a6;
+}
+
+.input_form_control:hover {
+  border-color: #2489d3;
+}
+.input_form_control:focus-within {
+  outline: 1px auto #2489d3;
+}
+.button_next_step {
+  display: flex;
+  padding: 20px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 100px;
+  background: #2489d3;
+}
+.button_next_step:hover {
+  background: #2079ba;
+}
+.button_next_step:disabled {
+  background: #98bcd5;
+}
+.button_next_step_text {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 700;
+}
+.first_step_button_wrapper {
+  width: 100%;
+}
+.first_step {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.input_form_control::placeholder {
+  color: #8692a6;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+}
+.input_form_control:not(:placeholder-shown) {
+  color: #333;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 700;
+}
+.form_control.error {
+  color: #db604e;
+  box-shadow: 0px 4px 14px 1px rgba(219, 96, 78, 0.05);
+}
+.input_form_control.input_error {
+  border: 1px solid #db604e;
+}
+@media (max-width: 767px) {
+  .form_control {
+    font-size: 16px;
+  }
+  .input_form_control {
+    padding: 11px 15px;
+    height: 50px;
+  }
+  .input_form_control:not(:placeholder-shown) {
+    font-size: 16px;
+  }
+  .input_form_control::placeholder {
+    font-size: 16px;
+  }
+  .button_next_step {
+    padding: 15px 30px;
+  }
+  .button_next_step_text {
+    font-size: 16px;
+  }
+}
